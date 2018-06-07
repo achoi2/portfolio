@@ -1,0 +1,15 @@
+#showcase{
+  min-height: 500px;
+  position: relative;
+  background:url('../assets/images/mountain.jpg')
+}
+
+#contact{
+  position: relative;
+  min-height: 400px;
+  background:url('../assets/images/corporate.jpeg');
+}
+#footer{
+  background-color: rgb(32,32,32);
+  color: white;
+}
