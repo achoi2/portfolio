@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Abril Fatface' cursive;
+    background-color: white;
+}
+
+/*******************************
+		NAV STYLES
+*******************************/
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #f7f7f7;
+    padding: 2em 2em 2em 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.media-list {
+    padding-left: 0.6em;
+    display: flex;
+}
+
+.media-list li {
+    padding-right: 0.7em;
+    list-style: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-links li {
+    padding-right: 3em;
+}
+
+/*******************************
+		INTRO STYLES
+*******************************/
+
+.intro {
+    background-image: url(./media/code.jpg);
+    height: 40em;
+    background-size: cover;
+    background-position: center;
+}
+
+/*******************************
+		ABOUT ME STYLES
+*******************************/
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #212529
+}
+
+.myphoto {
+    margin-top: 5em;
+    width: 15em;
+    height: 20em;
+    border-radius: 50%;
+}
+
+.column {
+    padding-top: 3em;
+    margin: 1em 6em 1em 6em;
+}
+
+/*******************************
+		SELECTED WORK STYLES
+*******************************/
+
+.selected-work {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7;  
+}
+
+.selected-work h2 {
+    padding-top: 2em;
+}
+
+.work-card {
+    /* position: relative; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 60%;
+}
+
+.work-card h2 {
+    padding-bottom: 1em;
+}
+
+.web-image {
+    width: 25em;
+    height: 20em;
+}
+
+.image-container:hover .web-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .about-button {
+  opacity: 1;
+}
+
+.about-button {
+    transition: 0.5s ease;
+    opacity: 0;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.view-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+/*******************************
+        MEDIA QUERIES
+*******************************/
+
+@media(min-width: 600px) {
+    .nav-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+    }
+}
