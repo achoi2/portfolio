@@ -7,8 +7,6 @@ let contactSection = document.querySelector('.contact');
 let navButton = document.querySelector('.nav-button');
 let navLinks = document.querySelector('.nav-links');
 
-
-
 linksAbout.addEventListener('click', () => {
     aboutSection.scrollIntoView({ behavior: 'smooth' });
 });
@@ -21,7 +19,12 @@ linksContact.addEventListener('click', () => {
     contactSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-
-
-
+// navLinks.classList.toggle('show');
+document.addEventListener('click', e => {
+    if (e.target === navButton) {
+        navLinks.classList.toggle('show');
+    } else {
+        navLinks.classList.remove('show');
+    }
+});
 
