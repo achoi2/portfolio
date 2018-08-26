@@ -14,6 +14,11 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.paragraph-text {
+    font-size: 1.3em;
+    letter-spacing: .2em;
+}
+
 /*******************************
 		NAV STYLES
 *******************************/
@@ -164,6 +169,10 @@ nav {
     font-size: 3em;
     padding: 0.7em 0 0.5em 0;
     display: block;
+}
+
+.project-date {
+    margin-bottom: 1.3em;
 }
 
 .web-image {
