@@ -1,14 +1,14 @@
 let linksAbout = document.querySelector('.links-about');
 let linksSelected = document.querySelector('.links-selected');
 let linksContact = document.querySelector('.links-contact');
-let aboutSection = document.querySelector('.about');
-let selectedSection = document.querySelector('.selected-work');
+let intoSection = document.querySelector('.intro');
+let selectedSection = document.querySelector('.selected-title');
 let contactSection = document.querySelector('.contact');
-let navButton = document.querySelector('.nav-button');
-let navLinks = document.querySelector('.nav-links');
-
+let navButton = document.querySelector('.nav-btn');
+let navLinks = document.querySelector('.navlinks');
+    
 linksAbout.addEventListener('click', () => {
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
+    intoSection.scrollIntoView({ behavior: 'smooth' });
 });
 
 linksSelected.addEventListener('click', () => {

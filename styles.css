@@ -11,19 +11,17 @@ body {
     height: 100%;
     font-family: 'Abril Fatface', cursive;
     background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
-
 
 /*******************************
 		NAV STYLES
 *******************************/
 
-
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 2em 2em 2em 2em;
     position: fixed;
     top: 0;
@@ -35,27 +33,30 @@ nav {
     position: relative;
 }
 
-.nav-links {
-    display: none;
-    position: absolute;
-    right: 9%;  
-    overflow: auto;
-    box-shadow: 0 .5em 1em 0 rgba(0,0,0,0.2);
-    background-color: #a9a9a9;  
+.navlinks-container img {
+    cursor: pointer;
 }
 
+.navlinks {
+    display: none;
+    position: absolute;
+    right: 9%;
+    overflow: auto;
+    box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
+    background-color: #a9a9a9;
+}
 
-.nav-links ul {
+.navlinks ul {
     list-style-type: none;
     flex-direction: column;
     cursor: pointer;
 }
 
-.nav-links li {
+.navlinks li {
     padding: 1em 2em;
 }
 
-.nav-links li:hover {
+.navlinks li:hover {
     background-color: #989898;
 }
 
@@ -63,13 +64,13 @@ nav {
     display: block;
 }
 
-
 /*******************************
 		INTRO STYLES
 *******************************/
 
 .intro {
-    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./media/apple.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./media/apple.jpeg);
     height: 40em;
     background-size: cover;
     background-position: center;
@@ -121,15 +122,23 @@ nav {
     margin: 0em 6em 0 6em;
 }
 
+.column:last-child {
+    padding-bottom: 3em;
+}
+
 /*******************************
 		SELECTED WORK STYLES
 *******************************/
+
+.selected-title {
+    padding-top: 1.2em;
+}
 
 .selected-work {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #acacac
+    background-color: #acacac;
 }
 
 .selected-work h2 {
@@ -152,10 +161,9 @@ nav {
     font-family: 'Indie Flower', cursive;
     font-weight: 400;
     font-size: 3em;
-    padding: .7em 0 .5em 0;
+    padding: 0.7em 0 0.5em 0;
     display: block;
 }
-
 
 .web-image {
     width: 25em;
@@ -166,7 +174,6 @@ nav {
     margin: 2em 5em 2em 5em;
 }
 
-
 .website-btn {
     margin-top: 1.5em;
     text-transform: uppercase;
@@ -174,6 +181,7 @@ nav {
     background-color: #ffffff;
     color: #575757;
     padding: 1em 2em;
+    margin-right: 0.7em;
     display: inline-block;
     border-radius: 3em;
 }
@@ -193,7 +201,7 @@ nav {
 }
 
 .social-media {
-    margin: 2em 0 2em 0;  
+    margin: 2em 0 2em 0;
 }
 
 .media-list {
@@ -209,19 +217,58 @@ nav {
 .media-list img {
     background-color: white;
     border-radius: 3em;
-    padding: .5em;
+    padding: 0.5em;
 }
 
 /*******************************
         MEDIA QUERIES
 *******************************/
 
-/* @media(min-width: 600px) {
-    .nav-button {
+@media (min-width: 750px) {
+    .nav-btn {
         display: none;
     }
 
-    .nav-links {
-        display: block;
+    .navlinks-container {
+        position: static;
     }
-} */
+
+    .navlinks {
+        position: static;
+        display: inline;
+        box-shadow: 0 0 0 0;
+        background-color: #c2c2c2;
+    }
+
+    .navlinks ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navlinks li {
+        padding: 0 2em;
+    }
+    .navlinks li:hover {
+        background-color: #c2c2c2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .work-card {
+        flex-direction: row;
+    }
+
+    .content-container {
+        margin: 0;
+        padding: 2em 2em 2em 2em;
+    }
+
+    .image-container {
+        padding: 2em 2em 4em 4em;
+    }
+
+    .work-title {
+        padding: 0;
+        font-size: 2.5em;
+    }
+}
