@@ -19,7 +19,7 @@ linksContact.addEventListener('click', () => {
     contactSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-// navLinks.classList.toggle('show');
+
 document.addEventListener('click', e => {
     if (e.target === navButton) {
         navLinks.classList.toggle('show');
