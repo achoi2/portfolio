@@ -157,6 +157,7 @@ nav {
     text-align: center;
 }
 
+
 .work-title {
     font-family: 'Indie Flower', cursive;
     font-weight: 400;
@@ -171,7 +172,7 @@ nav {
 }
 
 .content-container {
-    margin: 2em 5em 2em 5em;
+    margin: 2em 3em 2em 3em;
 }
 
 .website-btn {
@@ -185,6 +186,11 @@ nav {
     display: inline-block;
     border-radius: 3em;
 }
+
+.website-btn:hover {
+    background-color: #989898;
+}
+
 
 /*******************************
         CONTACT SECTION
@@ -212,12 +218,18 @@ nav {
 .media-list li {
     padding-right: 0.7em;
     list-style: none;
+    cursor: pointer;
 }
 
 .media-list img {
     background-color: white;
     border-radius: 3em;
     padding: 0.5em;
+}
+
+.media-list img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 14px 32px rgba(0, 0, 0, 0.3);
 }
 
 /*******************************
@@ -250,6 +262,7 @@ nav {
     }
     .navlinks li:hover {
         background-color: #c2c2c2;
+        color: black;
     }
 }
 
