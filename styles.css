@@ -14,6 +14,14 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.column {
+    padding-top: 3em;
+    margin: 0em 6em 0 6em;
+}
+
+.column:last-child {
+    padding-bottom: 3em;
+}
 /*******************************
 		NAV STYLES
 *******************************/
@@ -71,7 +79,7 @@ nav {
 .intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(./media/apple.jpeg);
-    height: 40em;
+    height: 35em;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -103,28 +111,21 @@ nav {
 *******************************/
 
 .about {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     font-family: 'Indie Flower', cursive;
     background-color: #575757;
     text-align: center;
+    padding: 4em 0 4em 0;
 }
 
 .myphoto {
-    margin-top: 5em;
     width: 15em;
     height: 20em;
     border-radius: 50%;
+    margin-bottom: 4em;
 }
 
-.column {
-    padding-top: 3em;
-    margin: 0em 6em 0 6em;
-}
-
-.column:last-child {
-    padding-bottom: 3em;
+.column-about {
+    margin: 0em 3em 0 3em;
 }
 
 .paragraph-text {
@@ -174,7 +175,7 @@ nav {
 }
 
 .project-date {
-    margin-bottom: 2.5em;
+    margin-bottom: 3.7em;
 }
 
 .project-text {
@@ -192,7 +193,7 @@ nav {
 }
 
 .website-btn {
-    margin-top: 3.6em;
+    margin-top: 3.3em;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #ffffff;
